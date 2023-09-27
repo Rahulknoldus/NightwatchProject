@@ -23,5 +23,6 @@ jobs:
 
       - name: Run Tests
         run: |
-          npm test /tutorial/test/homepage.js
+         npm test -- test/homepage.js
+
 
