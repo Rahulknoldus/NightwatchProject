@@ -16,8 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20]https://amwaycloud.atlassian.net/browse/APIM-760
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: [20.x]
 
  
 
@@ -30,4 +29,4 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm test /tutorial/test
+    - run: npm test tutorial/test
